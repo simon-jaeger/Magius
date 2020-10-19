@@ -1,0 +1,15 @@
+.Button {
+  height: 2.5rem;
+  padding: 0 1.5rem;
+  border-radius: 0.25rem;
+  background-color: var(--indigo6);
+}
+.Button:hover {
+  filter: brightness(110%);
+}
+.Button.Button-text {
+  background-color: transparent;
+}
+.Button.Button-red {
+  background-color: var(--red5);
+}

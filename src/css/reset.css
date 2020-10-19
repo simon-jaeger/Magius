@@ -1,0 +1,122 @@
+/* reset */
+/*******************************************************************************
+removes default styling (padding, list-style, font-size, borders, ...)
+sets sane defaults (border-box, border-collapse, ...)
+*******************************************************************************/
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  width: auto;
+  height: auto;
+  padding: 0;
+  border: none;
+  margin: 0;
+  background: none;
+  color: inherit;
+  font-family: inherit;
+  font-style: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  font-weight: inherit;
+  text-align: inherit;
+  text-decoration: none;
+  text-shadow: inherit;
+  -webkit-text-stroke: 0 currentColor;
+  overflow-wrap: break-word;
+  word-break: break-word;
+
+  /* disable font boosting (auto zooming) on chrome android */
+  max-height: 999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999px;
+}
+
+:focus {
+  outline: 0;
+}
+::-moz-focus-inner {
+  border: 0;
+}
+
+::placeholder {
+  color: inherit;
+  opacity: 0.5;
+}
+
+html {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+img,
+svg,
+video,
+audio,
+canvas,
+iframe,
+embed,
+object,
+label,
+small,
+input,
+textarea,
+select,
+button {
+  display: block;
+}
+
+textarea {
+  resize: vertical;
+}
+
+legend {
+  float: left;
+  width: 100%;
+}
+legend + * {
+  clear: both;
+}
+
+img,
+svg,
+video,
+audio,
+canvas,
+iframe,
+embed,
+object {
+  vertical-align: middle;
+}
+
+svg:not([fill]) {
+  fill: currentColor;
+}
+
+button,
+input[type="checkbox"],
+input[type="radio"],
+input[type="checkbox"] + label,
+input[type="radio"] + label,
+[aria-controls] {
+  cursor: pointer;
+}
+[aria-disabled],
+[disabled] {
+  cursor: not-allowed;
+}
+[aria-busy="true"] {
+  cursor: progress;
+}
