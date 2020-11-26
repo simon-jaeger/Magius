@@ -2,6 +2,8 @@
 
 A tag based image manager.
 
+[→ Download Magius](https://github.com/simon-jaeger/Magius/releases)
+
 ## Features
 
 - Open existing directories and browse the images within
